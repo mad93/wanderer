@@ -6,6 +6,7 @@ import { get } from 'svelte/store'
 
 const defaultLocale = 'en'
 
+register('ca', () => import('./locales/ca.json'))
 register('en', () => import('./locales/en.json'))
 register('de', () => import('./locales/de.json'))
 register('fr', () => import('./locales/fr.json'))
